@@ -9,7 +9,7 @@ class_names = ['Bishop', 'King', 'Knight', 'Pawn', 'Queen', 'Rook']
 img_width = 224
 img_height = 224
 
-model = tf.keras.models.load_model("../model_v2.keras")
+model = tf.keras.models.load_model("model_v2.keras")
 
 app = FastAPI()
 
@@ -25,5 +25,5 @@ async def predict(file: UploadFile):
     img_array = tf.image.resize(img_array, [img_height,img_width])
     return class_names[np.argmax(model.predict(img_array))]    
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="localhost", port=8000)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="localhost", port=8000)
