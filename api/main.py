@@ -9,11 +9,11 @@ class_names = ['Bishop', 'King', 'Knight', 'Pawn', 'Queen', 'Rook']
 img_width = 224
 img_height = 224
 
-model = tf.keras.models.load_model("../chess_pieces_recognizer_model.keras")
+model = tf.keras.models.load_model("../model_v2.keras")
 
 app = FastAPI()
 
-@app.get("/ping")
+@app.get("/")
 async def ping():
     return "Hello, server is running !"
 
