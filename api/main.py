@@ -15,7 +15,7 @@ app = FastAPI()
 
 @app.get("/")
 async def ping():
-    return "Hello, server is running !"
+    return "Hello, I am running !"
 
 @app.post("/predict")
 async def predict(file: UploadFile):
