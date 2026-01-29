@@ -1,0 +1,41 @@
+#image_uploaded{
+  max-height: 500px;
+  border-radius: 48px;
+  align-self: center;
+}
+
+.page{
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+.App{
+  padding: 20px;
+}
+
+.load{
+  text-align: center;
+}
+
+.input {
+  text-align: center;
+  padding-inline: 12px;
+  padding-block: 4px;
+  color: white;
+  font-size: 32px;
+  /* background-color: rgba(255, 255, 255, 0.643); */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
