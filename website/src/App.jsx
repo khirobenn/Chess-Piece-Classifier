@@ -51,7 +51,7 @@ const FileUploader = () => {
     <>
       <div className="input">
         <p>Choose your image !</p>
-        <input type="file" accept='.png,jpg,.jpeg,.webp,.avif' onChange={handleFileChange} />
+        <input type="file" accept='.png,.jpg,.jpeg,.webp,.avif' onChange={handleFileChange} />
       </div>
 
       {file && (
